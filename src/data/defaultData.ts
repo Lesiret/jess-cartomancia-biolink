@@ -1,5 +1,6 @@
 import { ColorTheme, ConsultationType, ProfileData } from '../types';
-import cartomancerAvatar from '../assets/images/cartomancer_avatar_1790349939670.jpg';
+
+export const cartomancerAvatar = '/assets/images/cartomancer_avatar_1790349939670.jpg';
 
 export const HIBISCUS_THEMES: Record<string, ColorTheme> = {
   flor_de_hibisco: {
