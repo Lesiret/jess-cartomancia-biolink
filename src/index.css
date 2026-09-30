@@ -1,0 +1,103 @@
+@import "tailwindcss";
+
+@layer base {
+  body {
+    font-family: 'Plus Jakarta Sans', system-ui, -apple-system, sans-serif;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+}
+
+.font-cinzel {
+  font-family: 'Cinzel', serif;
+}
+
+.font-editorial {
+  font-family: 'Cormorant Garamond', Georgia, serif;
+}
+
+.font-playfair {
+  font-family: 'Playfair Display', Georgia, serif;
+}
+
+/* Continuous ambient breathing glowing background */
+@keyframes ambientBreathe1 {
+  0%, 100% {
+    transform: translate(0px, 0px) scale(1);
+    opacity: 0.45;
+  }
+  50% {
+    transform: translate(30px, -25px) scale(1.22);
+    opacity: 0.8;
+  }
+}
+
+@keyframes ambientBreathe2 {
+  0%, 100% {
+    transform: translate(0px, 0px) scale(1);
+    opacity: 0.4;
+  }
+  50% {
+    transform: translate(-30px, 35px) scale(1.25);
+    opacity: 0.75;
+  }
+}
+
+@keyframes ambientBreathe3 {
+  0%, 100% {
+    transform: translate(0px, 0px) scale(1);
+    opacity: 0.35;
+  }
+  50% {
+    transform: translate(35px, 20px) scale(1.2);
+    opacity: 0.7;
+  }
+}
+
+.animate-ambient-breathe-1 {
+  animation: ambientBreathe1 8s ease-in-out infinite alternate;
+}
+
+.animate-ambient-breathe-2 {
+  animation: ambientBreathe2 11s ease-in-out infinite alternate;
+}
+
+.animate-ambient-breathe-3 {
+  animation: ambientBreathe3 10s ease-in-out infinite alternate;
+}
+
+
+/* Smooth button press and hover */
+.hibiscus-card-shadow {
+  box-shadow: 0 4px 18px -2px rgba(192, 130, 160, 0.1), 0 2px 6px -1px rgba(0, 0, 0, 0.02);
+}
+
+.hibiscus-card-hover:hover {
+  box-shadow: 0 8px 24px -3px rgba(192, 130, 160, 0.18), 0 3px 8px -2px rgba(0, 0, 0, 0.04);
+  transform: translateY(-2px);
+}
+
+.hibiscus-hero-shadow {
+  box-shadow: 0 8px 22px -3px rgba(192, 130, 160, 0.35), 0 4px 10px -2px rgba(192, 130, 160, 0.2);
+}
+
+.hibiscus-hero-hover:hover {
+  box-shadow: 0 12px 28px -4px rgba(192, 130, 160, 0.45), 0 6px 14px -2px rgba(192, 130, 160, 0.25);
+  transform: translateY(-2px);
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(8px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.animate-fadeIn {
+  animation: fadeIn 0.6s cubic-bezier(0.16, 1, 0.3, 1) both;
+}
+

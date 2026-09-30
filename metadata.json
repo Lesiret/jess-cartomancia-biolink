@@ -1,0 +1,6 @@
+{
+  "name": "Jess Cartomancia - Bio Link Hibisco",
+  "description": "Página de links e agendamento da Jess Cartomancia com estética floral de hibisco, tarot e baralho cigano.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
